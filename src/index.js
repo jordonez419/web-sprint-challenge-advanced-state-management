@@ -10,7 +10,7 @@ import { store } from "./reducers";
 
 
 import "./index.css";
-import App from '../src/App'
+import App from './App'
 
 const { worker } = require('./mocks/browser');
 worker.start();
