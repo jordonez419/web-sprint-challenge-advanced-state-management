@@ -1,8 +1,37 @@
 
+import { FETCH_SMURF, SMURFS_FETCHED, FAILED_SMURF_FETCH, ADD_SMURF, ADD_ERROR_VALUE } from "../actions"
+
 export const initialState = {
+    smurfs: ['bob', 'steve', 'smurfette'],
+    appIsLoading: false,
+    errorMessage: 'This is an Error Message'
 }
 
-const reducer = ()=>{
+const reducer = (state = initialState, action) => {
+    switch (action.type) {
+        case FETCH_SMURF:
+            return {
+
+            }
+        case SMURFS_FETCHED:
+            return {
+
+            }
+        case FAILED_SMURF_FETCH:
+            return {
+
+            }
+        case ADD_SMURF:
+            return {
+
+            }
+        case ADD_ERROR_VALUE:
+            return {
+
+            }
+        default:
+
+    }
 }
 
 //**************DO NOT EDIT ANY CODE BEYOND THIS POINT**************//
